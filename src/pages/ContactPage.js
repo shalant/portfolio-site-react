@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import Content from '../components/Content';
 import { Form } from 'react-bootstrap'
 import { Button } from 'react-bootstrap';
-
+import Axios from 'axios';
 
 class ContactPage extends React.Component {
     
@@ -34,7 +34,30 @@ class ContactPage extends React.Component {
         this.setState({
             disabled: true,
         })
+
+        Axios.post('/api/email', this.state)
+            .then(res => {
+                if(res.data.success) {
+                    this.setState({
+                        disabled: false,
+                        emailSent: true
+                    });
+                } else {
+                    this.setState({
+                        disabled: false,
+                        emailSent: false
+                    });
+                }
+            })
+            .catch(err => {
+                this.setState({
+                    disabled: false,
+                    emailSent: false
+                });
+            })
     }
+
+
 
     render() {
         return(
