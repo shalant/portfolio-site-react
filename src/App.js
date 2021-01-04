@@ -22,14 +22,14 @@ class App extends React.Component {
       home: {
         title: 'Musicians make good coders',
         subTitle: 'I am great',
-        text: 'Here is some meat:'
+        text: 'Here are some selected projects from my portfolio, click on each for more info:'
       },
       about: {
         title: 'About me',
         
       },
       contact: {
-        title: 'Hit Me Up'
+        title: 'Get in Touch'
       }
     }
   }

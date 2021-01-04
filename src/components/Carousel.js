@@ -1,7 +1,9 @@
 import React from 'react';
 import Card from './Card'
-import screenshot from '../assets/images/screenshot.png'
+import dynamicWine from '../assets/images/dynamicWine.png'
 import informedTrades from '../assets/images/informedTrades.png'
+import employeeDirectory from '../assets/images/employeeDirectory.png'
+import SchedulerAppScreenshot from '../assets/images/SchedulerAppScreenshot.png'
 import { Container, Row } from 'react-bootstrap';
 
 class Carousel extends React.Component {
@@ -14,7 +16,7 @@ class Carousel extends React.Component {
                     id: 0,
                     title: "Dynamic Wine",
                     subTitle: "Blah",
-                    imgSrc: screenshot,
+                    imgSrc: dynamicWine,
                     link: 'https://github.com/carolinetwyman/dynamicwine',
                     selected: true
                 },
@@ -27,24 +29,24 @@ class Carousel extends React.Component {
                     selected: false
 
                 },
-                // {
-                //     id: 2,
-                //     title: "Number 1",
-                //     subTitle: "Blah",
-                //     imgSrc: ,
-                //     link: ,
-                //     selected: false
+                {
+                    id: 2,
+                    title: "Employee Directory",
+                    subTitle: "Blah",
+                    imgSrc: employeeDirectory,
+                    link: 'https://github.com/shalant/employee_directory_react',
+                    selected: false
 
-                // },
-                // {
-                //     id: 3,
-                //     title: "Number 1",
-                //     subTitle: "Blah",
-                //     imgSrc: ,
-                //     link: ,
-                //     selected: false
+                },
+                {
+                    id: 3,
+                    title: "Scheduler App",
+                    subTitle: "Blah",
+                    imgSrc: SchedulerAppScreenshot,
+                    link: 'https://github.com/shalant/SchedulerApp',
+                    selected: false
 
-                // },
+                },
                 // {
                 //     id: 4,
                 //     title: "Number 1",
