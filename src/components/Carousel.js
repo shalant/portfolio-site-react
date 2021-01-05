@@ -15,7 +15,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: "Dynamic Wine",
-                    subTitle: "Blah",
+                    subTitle: "Final project of NorthWestern Coding Bootcamp, featuring a MERN stack",
                     imgSrc: dynamicWine,
                     link: 'https://github.com/carolinetwyman/dynamicwine',
                     selected: true
@@ -23,7 +23,7 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: "Informed Trades",
-                    subTitle: "Blah",
+                    subTitle: "First group project, using 2 separate API calls and JS/HTML/CSS",
                     imgSrc: informedTrades,
                     link: 'https://shalant.github.io/Informed_Trades',
                     selected: false
@@ -32,7 +32,7 @@ class Carousel extends React.Component {
                 {
                     id: 2,
                     title: "Employee Directory",
-                    subTitle: "Blah",
+                    subTitle: "A first React project, utilizing sorting functionality",
                     imgSrc: employeeDirectory,
                     link: 'https://github.com/shalant/employee_directory_react',
                     selected: false
@@ -41,20 +41,12 @@ class Carousel extends React.Component {
                 {
                     id: 3,
                     title: "Scheduler App",
-                    subTitle: "Blah",
+                    subTitle: "An intermediate Javascript project using a few bells and whistles",
                     imgSrc: SchedulerAppScreenshot,
                     link: 'https://github.com/shalant/SchedulerApp',
                     selected: false
 
                 },
-                // {
-                //     id: 4,
-                //     title: "Number 1",
-                //     subTitle: "Blah",
-                //     imgSrc: ,
-                //     link: ,
-                //     selected: false
-                //}
             ]
         }
     }
