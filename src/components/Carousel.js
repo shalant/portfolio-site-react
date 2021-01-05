@@ -15,7 +15,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: "Dynamic Wine",
-                    subTitle: "Final project of NorthWestern Coding Bootcamp, featuring a MERN stack",
+                    subTitle: "Final MERN project of NorthWestern Coding Bootcamp",
                     imgSrc: dynamicWine,
                     link: 'https://github.com/carolinetwyman/dynamicwine',
                     selected: true
@@ -23,7 +23,7 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: "Informed Trades",
-                    subTitle: "First group project, using 2 separate API calls and JS/HTML/CSS",
+                    subTitle: "First group project, using 2 separate API calls",
                     imgSrc: informedTrades,
                     link: 'https://shalant.github.io/Informed_Trades',
                     selected: false
@@ -41,7 +41,7 @@ class Carousel extends React.Component {
                 {
                     id: 3,
                     title: "Scheduler App",
-                    subTitle: "An intermediate Javascript project using a few bells and whistles",
+                    subTitle: "An intermediate Javascript project using some cool stuff",
                     imgSrc: SchedulerAppScreenshot,
                     link: 'https://github.com/shalant/SchedulerApp',
                     selected: false
@@ -77,7 +77,7 @@ makeItems = (items) => {
 render() {
     return (
         <Container fluid={true}>
-            <Row className='justify-content-around'>
+            <Row className='carousel-styles'>
                 {this.makeItems(this.state.items)}
             </Row>
         </Container>
