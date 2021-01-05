@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import Resume from './components/Resume';
 class App extends React.Component {
 
   constructor(props) {
@@ -48,6 +49,7 @@ class App extends React.Component {
               <Nav className='ml-auto'>
                 <Link className='nav-link' to='/'>Home</Link>
                 <Link className='nav-link' to='/about'>About</Link>
+                <Link className='nav-link' to='/resume'>Resume</Link>
                 <Link className='nav-link' to='/contact'>Contact</Link>
 
               
@@ -68,6 +70,8 @@ class App extends React.Component {
                   text={this.state.about.text}
                   />}
           />
+
+          <Route path='/resume' component={Resume} />
 
           <Route path='/contact' exact render={() => <ContactPage 
                   title={this.state.contact.title}
