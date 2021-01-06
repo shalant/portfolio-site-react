@@ -1,6 +1,9 @@
 {
   "name": "portfolio-site",
   "version": "0.1.0",
+  "engines": {
+    "node": "15.x"
+  },
   "private": true,
   "dependencies": {
     "@popperjs/core": "^2.6.0",
