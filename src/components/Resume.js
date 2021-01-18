@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../assets/images/DouglasRosenbergResume.pdf";
+import resume from "../assets/images/DouglasRosenbergResume1.pdf";
 
 class Resume extends React.Component {
 
